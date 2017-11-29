@@ -1,6 +1,6 @@
 # Add  code here!
 def prime?(number)
-  if number < 0 || number == 1
+  if number < 0 || number == 1 || number == 0
     return false
   end
   range = (2...number).to_a
