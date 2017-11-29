@@ -6,7 +6,7 @@ def prime?(number)
   range = (2...number).to_a
   range.each{
     |x|
-    if range % x == 0
+    if number % x == 0
       return false
     end
   }
