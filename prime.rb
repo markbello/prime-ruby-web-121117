@@ -1,10 +1,11 @@
 # Add  code here!
 def prime?(number)
-  [2..number].each{
+  range = [2..number]
+  range.each{
     |x|
-    if number % x == 0
+    if number % x == 0 || number < 0
       return false
     end
   }
-  true  
+  true
 end
