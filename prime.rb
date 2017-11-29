@@ -1,13 +1,14 @@
 # Add  code here!
 def prime?(number)
-  if number < 0
+  if number < 0 || number == 1
     return false
   end
-  range = [2 .. number]
+  range = (2..number).to_a
   range.each{
     |x|
-    if number % range[x] == 0 || number < 0
+    if range % x == 0
       return false
     end
   }
+  true
 end
